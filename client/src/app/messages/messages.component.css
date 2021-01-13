@@ -1,0 +1,38 @@
+ul {
+  display: block;
+  padding: 20px 20px;
+  background: #e8e8e8;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  flex-wrap: wrap;
+  border: 1px solid #777;
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+li.current {
+  background: #fffeb7;
+}
+
+li.admin {
+  background: #e1f1fa;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+i {
+  color: #7eb30a;
+}
+
+span {
+  flex-basis: 100%;
+}

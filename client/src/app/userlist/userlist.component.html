@@ -1,0 +1,7 @@
+<h4>Online users:</h4>
+<ul>
+  <li *ngFor="let user of onlineUsers" [class.current]="user.id === currentUser.id">
+    <span>{{ user.name }}</span>
+    <i>Entry Time: {{ user.entryTime | date:'hh:mm' }}</i>
+  </li>
+</ul>

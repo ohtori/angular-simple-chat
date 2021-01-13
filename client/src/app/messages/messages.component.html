@@ -1,0 +1,11 @@
+<ul #scrollMe>
+  <li 
+    *ngFor="let message of messages"
+    [class.current]="message.fromID === currentUser.id"
+    [class.admin]="message.fromID === 0"
+  >
+    <strong>{{ message.from }}</strong>
+    <i>{{ message.incommingTime | date:'hh:mm:ss' }}</i>
+    <span>{{ message.message }}</span>
+  </li>
+</ul>

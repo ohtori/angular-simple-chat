@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html, body, app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+app-footer {
+  margin-top: auto;
+}

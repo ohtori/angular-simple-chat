@@ -1,0 +1,23 @@
+<h1>Simple Chat</h1>
+<div class="row">
+  <app-chat *ngIf="currentUser.name; else noUser"></app-chat>
+  <ng-template #noUser>
+    <form class="col s12" (submit)="submitHandler($event)">
+      <h4>Authorize please:</h4>
+      <p *ngIf="currentUser.error;" class="auth-error">Incorrect login or password</p>
+      <div class="row">
+        <div class="input-field col s6">
+          <div class="input-field">
+            <input placeholder="Nickname" type="text" class="validate">
+          </div>
+          <div class="input-field">
+            <input placeholder="Password" type="password" class="validate">
+          </div>
+        </div>
+        <div class="input-field col s12">
+          <button class="btn orange darken-2">Submit</button>
+        </div>
+      </div>
+    </form>
+  </ng-template>
+</div>
